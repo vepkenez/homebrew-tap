@@ -20,3 +20,7 @@ brew install --cask dualcursor
    `dist/DualCursor-<version>.dmg` to a GitHub release tagged `v<version>`.
 2. In `Casks/dualcursor.rb`, set `version` and `sha256` (`shasum -a 256 dist/DualCursor-<version>.dmg`).
 3. Commit and push this repo. People get it with `brew upgrade --cask dualcursor`.
+
+Never replace the DMG on an existing release (for example `gh release upload --clobber`).
+Every rebuild changes its checksum, so the cask's `sha256` stops matching and
+`brew install` fails until the cask is updated. Ship a new version instead.
