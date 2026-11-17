@@ -2,8 +2,12 @@
 
 Homebrew casks for my apps.
 
+Homebrew only loads casks from taps you've chosen to trust, so trust this tap once, then install:
+
 ```bash
-brew install --cask vepkenez/tap/dualcursor
+brew tap vepkenez/tap
+brew trust --tap vepkenez/tap
+brew install --cask dualcursor
 ```
 
 | Cask | App |
