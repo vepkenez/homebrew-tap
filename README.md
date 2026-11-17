@@ -24,3 +24,7 @@ brew install --cask dualcursor
 Never replace the DMG on an existing release (for example `gh release upload --clobber`).
 Every rebuild changes its checksum, so the cask's `sha256` stops matching and
 `brew install` fails until the cask is updated. Ship a new version instead.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
