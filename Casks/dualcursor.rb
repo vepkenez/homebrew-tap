@@ -7,7 +7,7 @@ cask "dualcursor" do
   desc "Gives each pointing device its own remembered cursor position"
   homepage "https://github.com/vepkenez/DualCursor"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "DualCursor.app"
 
